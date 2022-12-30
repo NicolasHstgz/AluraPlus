@@ -211,8 +211,8 @@ h4 > a:active {
 
   body {
     box-sizing: border-box;
-    width: 100vw;
-    padding: 0 15px;
+    width: auto;
+    padding: 0 1em;  
   }
 
   .main-section {
@@ -220,7 +220,6 @@ h4 > a:active {
     background-image: none;
     text-align: center;
     display: flex;
-    padding: 0 1em;
     margin-top: 20px;
   }
 
@@ -271,15 +270,15 @@ h4 > a:active {
     padding: 1em 0;
   }
 
-  .mobile-div {
-    text-align: center;
-    grid-row: 1;
-  }
-
   .mobile-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 30% 40%;
+  }
+
+  .mobile-div {
+    text-align: center;
+    grid-row: 1;
   }
 
   .grid-div {
