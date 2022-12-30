@@ -1,97 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alura Plus</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobile.css">
-</head>
-<body>
-  <section class="container main-section">
-    <div class="container-div div-not">
-      <h1 class="combo-tittle">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.
-      </h1>
-      <img class="img-combo" src="img/Combo.png" alt="Representação significativa do combo do Alura Plus com o Alura Língua">
-      <a href="https://www.youtube.com/watch?v=hNeKo_hlB5w" target="_blank" class="container-button">Assine por 12x de R$ 120,00*</a>
-      <a href="https://alura.com.br" target="_blank" class="container-button secondary-button">Assinar somente o Alura+</a>
-      <p class="container-advice">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-  <section class="container secondary-section">
-    <img class="secondary-image" src="img/Plataformas.png" alt="Monitor e celular com o Alura Plus aberto">
-    <div class="div-not">
-      <h2 class="secondary-tittle">Assista do seu jeito</h2>
-      <p class="secondary-p">Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
-    </div>
-  </section>
-
-  <section class="container secondary-section mobile-section">
-    <div class="div-not grid-div">
-      <p class="secondary-p third-p">Só o Combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
-      <a class="container-button third-button" target="_blank" href="https://alura.com.br">Assine o Combo+</a>
-    </div>
-    <div class="mobile-div">
-      <img class="telas-image" src="img/Telas.png" alt="Tela de um computador com a pagina inicial do Alura Plus">
-    </div>
-  </section>
-
-  <section class="container secondary-section">
-    <img class="secondary-image" src="img/Notebook.png" alt="Tela de um Notebook com um dos diversos cursos do Alura Plus">
-    <div class="div-not">
-      <h2 class="secondary-tittle">Baixe seus cursos</h2>
-      <p class="secondary-p">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
-    </div>
-  </section>
-
-  <section class="devices-section">
-    <h2 class="secondary-tittle flex-container-tittle">Disponível nos seus dispositivos favoritos</h2>
-
-    <div class="devices-div">
-      <ul class="flex-container">
-        <div>
-          <li>
-            <img class="device-image" src="img/tv.png" alt="">
-            <h3>TV</h3>
+  <body>
+    <header class="header">
+      <div class="left-menu-items container">
+        <input type="checkbox" id="menu" class="container-button" />
+        <label class="container-label" for="menu">
+          <span class="burguer-menu container-image"></span>
+        </label>
+        <ul class="menu-list">
+          <li class="menu-list-tittle">Categorias</li>
+          <li class="menu-list-item">
+            <a href="#">Programação</a>
           </li>
-        </div>
-
-        <div>
-          <li>
-            <img class="device-image" src="img/computador.png" alt="">
-            <h3>Computadores</h3>
+          <li class="menu-list-item">
+            <a href="#">Front-end</a>
           </li>
-        </div>
-
-        <div>
-          <li>
-            <img class="device-image" src="img/celular.png" alt="">
-            <h3>Celulares e Tablets</h3>
+          <li class="menu-list-item">
+            <a href="#">Infraestrutura</a>
           </li>
-        </div>
+          <li class="menu-list-item">
+            <a href="#">Business</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#">Design & UX</a>
+          </li>
+        </ul>
+        <img
+          class="container-image"
+          src="imgs/Logo.png"
+          alt="Logo da AluraBooks"
+        />
+        <h1 class="header-tittle">
+          <b class="header-tittle-bold">Alura</b>Books
+        </h1>
+      </div>
 
+      <ul class="options">
+        <input type="checkbox" id="options-menu" class="options-button" />
+        <label class="options-label" for="options-menu">
+          <li>Categorias</li>
+        </label>
+
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a href="#">Programação</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#">Front-end</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#">Infraestrutura</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#">Business</a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#">Design & UX</a>
+          </li>
+        </ul>
+
+        <li><a href="#">Favoritos</a></li>
+        <li><a href="#">Minha Estante</a></li>
       </ul>
-    </div>
-  </section>
 
+      <div class="right-menu-items container">
+        <a href="#">
+          <img
+            class="container-image container-image-fav"
+            src="imgs/Favoritos.svg"
+            alt="Botão para acessar meus favoritos"
+          />
+        </a>
+        <a class="container-link" href="#">
+          <img
+            class="container-image"
+            src="imgs/Compras.svg"
+            alt="Botão para acessar minhas compras"
+          />
+          <p>Minha Sacola</p>
+        </a>
+        <a class="container-link" href="#">
+          <img
+            class="container-image container-image-user"
+            src="imgs/Usuário.svg"
+            alt="Botão para acessar meu perfil"
+          />
+          <p>Meu Perfil</p>
+        </a>
+      </div>
+    </header>
+    <section class="banner">
+      <h2 class="banner-tittle">Já sabe por onde começar?</h2>
+      <p class="banner-text">
+        Encontre em nossa estante o que precisa para seu desenvolvimento!
+      </p>
+      <input
+        class="banner-search"
+        type="search"
+        placeholder="Qual será sua proxima leitura?"
+      />
+    </section>
+    <section class="carousel">
+      <h2 class="carousel-tittle">Últimos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="carousel-">
+        <div class="carousel-container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="imgs/Javascript.png"
+                  alt="Capa de livro sobre Javascript"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="imgs/Guia Front-end.png"
+                  alt="Capa de livro sobre Front-End"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="imgs/Portugol.png"
+                  alt="Capa de livro do HipsterJobs"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="imgs/ApacheKafka.png"
+                  alt="Capa do livro sobre angular"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="imgs/Liderança.png"
+                  alt="Capa do livro do Casa do Codigo"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="imgs/Javascript.png"
+                  alt="Capa do livro do Casa do Codigo"
+                />
+              </div>
+              ...
+            </div>
 
-  <footer>
-    <img src="img/Logo.png" alt="Logo da Alura Plus">
-    <div class="footer-itens">
-      <h4 class="secondary-p"><a href="#">Idioma</a></h4>
-      <h4 class="secondary-p"><a href="#">Dispositivos compatíveis</a></h4>
-      <h4 class="secondary-p"><a href="#">Contrato de assinatura</a></h4>
-      <h4 class="secondary-p"><a href="#">Politica de privacidade</a></h4>
-      <h4 class="secondary-p"><a href="#">Proteção de dados no Brasil</a></h4>
-      <h4 class="secondary-p"><a href="#">Anuncios personalizados</a></h4>
-      <h4 class="secondary-p"><a href="#f">Ajuda</a></h4>
-    </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="card">
+            <div class="card-description">
+              <div class="description">
+                <h3 class="description-tittle">
+                  Talvez você também se interesse por...
+                </h3>
+                <h2 class="book-tittle-description">Angular 11 e Firebase</h2>
+                <p class="text-description">
+                  Construindo uma aplicação integrada com a plataforma do
+                  Google.
+                </p>
+              </div>
+              <img
+                class="image-description"
+                src="imgs/Angular-1.png"
+                alt="Livro Angular"
+              />
+            </div>
+            <div class="card-button">
+              <ul class="buttons">
+                <li class="item-button">
+                  <img
+                    class="coracao"
+                    src="imgs/Favoritos-1.svg"
+                    alt="Adicionar aos favoritos"
+                  />
+                </li>
+                <li class="item-button">
+                  <img src="imgs/Sacola.png" alt="Adicionar no carrinho" />
+                </li>
+              </ul>
+              <a href="#" class="button-link">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p class="secondary-p right-p last-p">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+    <section class="carousel">
+      <h2 class="carousel-tittle">MAIS VENDIDOS</h2>
+      <!-- Slider main container -->
+      <div class="carousel-container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="imgs/Portugol.png" alt="Capa de livro do HipsterJobs" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Liderança.png"
+                alt="Capa do livro do Casa do Codigo"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/ApacheKafka.png" alt="Capa do livro sobre angular" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Javascript.png"
+                alt="Capa de livro sobre Javascript"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Guia Front-end.png"
+                alt="Capa de livro sobre Front-End"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Javascript.png"
+                alt="Capa do livro do Casa do Codigo"
+              />
+            </div>
+            ...
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+          <div class="card-description">
+            <div class="description">
+              <img
+                class="estrelinhas"
+                src="imgs/Estrelinhas.png"
+                alt="Escritora 5 estrelas"
+              />
+              <h3 class="description-tittle">Autora do mês</h3>
+              <h2 class="book-tittle-description">Juliana Agarikov</h2>
+              <p class="text-description">
+                Analista de sistemas e escritora, Juliana é especialista em
+                Front-End.
+              </p>
+            </div>
+            <img
+              class="image-description image-juliana"
+              src="imgs/Perfil-escritora 1-1.png"
+              alt="Livro Angular"
+            />
+          </div>
+          <div class="card-button">
+            <ul class="buttons">
+              <li class="item-button">
+                <img
+                  class="coracao"
+                  src="imgs/Favoritos-1.svg"
+                  alt="Adicionar aos favoritos"
+                />
+              </li>
+            </ul>
+            <a href="#" class="button-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p class="secondary-p last-p">® Alura+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
-  </footer>
-</body>
+    <section class="topics">
+      <h2 class="topics-tittle">Tópicos visitados recentemente</h2>
+      <ul class="topics-list">
+        <li>
+          <a href="#">Android</a>
+        </li>
+        <li>
+          <a href="#">Marketing Digital</a>
+        </li>
+        <li>
+          <a href="#">Agile</a>
+        </li>
+        <li>
+          <a href="#">Startups</a>
+        </li>
+        <li>
+          <a href="#">HTML & CSS</a>
+        </li>
+        <li>
+          <a href="#">Python</a>
+        </li>
+        <li>
+          <a href="#">OO</a>
+        </li>
+        <li>
+          <a href="#">Java</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <div class="contact-description">
+        <h2>Fique por dentro das novidades!</h2>
+        <p>Atualizações de e-books, novos livros, promoções e outros.</p>
+      </div>
+      <input type="email" placeholder="Cadastre seu e-mail" />
+    </section>
+
+    <hr />
+
+    <footer>
+      <div class="footer-1">
+        <h2 class="grupo-alura">Grupo Alura</h2>
+      </div>
+
+      <ul class="footer-2">
+        <li class="footer-tittle">
+          <h3>Educação</h3>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/Caelum.png" alt="" />
+          <p>Caelum</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/CasaDoCodigo.png" alt="" />
+          <p>Casa do Código</p>
+        </li>
+      </ul>
+
+      <ul class="footer-3">
+        <li class="footer-tittle">
+          <h3>Educação online</h3>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/Alura.png" alt="" />
+          <p>Alura</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/AluraEmpresas.png" alt="" />
+          <p>Alura Para Empresas</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/AluraLatam.png" alt="" />
+          <p>Alura LATAM</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/AluraStart.png" alt="" />
+          <p>Alura Start</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/MusicDot.png" alt="" />
+          <p>MusicDot</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/AluraLingua.png" alt="" />
+          <p>Alura Língua</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/PM3.png" alt="" />
+          <p>PM3</p>
+        </li>
+      </ul>
+
+      <ul class="footer-4">
+        <li class="footer-tittle">
+          <h3>Comunidade</h3>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/HipstersTech.png" alt="" />
+          <p>Hipsters ponto Tech</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/Scuba.png" alt="" />
+          <p>Scuba Dev</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/Layers.png" alt="" />
+          <p>Layers ponto Tech</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/LikeABoss.png" alt="" />
+          <p>Like a Boss</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/CarreiraSemFronteira.png" alt="" />
+          <p>Carreira sem Fronteira</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/HipstersJobs.png" alt="" />
+          <p>Hipsters ponto Jobs</p>
+        </li>
+
+        <li class="footer-item">
+          <img src="imgs/GUJ.png" alt="" />
+          <p>GUJ</p>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets'
+        }
+      })
+    </script>
+  </body>
 </html>
